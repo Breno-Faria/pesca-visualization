@@ -19,7 +19,7 @@ def home():
     connection = connect_to_db()
     cursor = connection.cursor()
     cursor.execute(
-        'SELECT * FROM contas'
+        'SELECT * FROM contas ORDER BY id DESC'
     )
     accounts = cursor.fetchall()
     cursor.close()
