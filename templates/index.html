@@ -13,15 +13,17 @@
     <div id="container">
         <table class="table table-striped table-dark" id="maintable">
             <thead>
-                <th scope="col" id="thindex">Nome</th>
-                <th scope="col" id="thname">Email</th>
-                <th scope="col" id="thscore">Localizacao</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Localizacao</th>
+                <th scope="col">Data</th>
             </thead>
             {% for player in players %}
                 <tr>
                     <td>{{ accounts[0] }}</td>
-                    <td>{{ accounts[1]}}</td>
+                    <td>{{ accounts[1] }}</td>
                     <td>{{ accounts[2] }}</td>
+                    <td>{{ accounts[3] }}</td>
                 </tr>
             {% endfor %}
 
